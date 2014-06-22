@@ -28,4 +28,3 @@ rem procedure
 	type %_TMP% >> %LOG_FILEPATH%
 	del %_TMP%
 	exit /b
-	exit /b
