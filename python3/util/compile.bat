@@ -1,3 +1,4 @@
+cd /d %~dp0
 
 :remove compiled file
 rmdir __pycache__ /s /q
