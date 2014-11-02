@@ -2,6 +2,7 @@ cd /d %~dp0
 
 :remove compiled file
 rmdir __pycache__ /s /q
+md __pycache__
 :compile
 ..\python -m compileall util.py
 

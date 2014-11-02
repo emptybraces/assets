@@ -14,11 +14,16 @@ def main():
     pass;
 
     # wait user input
-    user_input = input("Please enter the key: ");
+    # user_input = input("Please enter the key: ");
 
     # Null Object
     nullObject = None;
     print("true" if nullObject else "false");
+
+    # unpack list
+    lst = [0, 1, 2, 3];
+    x, y = lst[2:4];
+    print(x,y)
 
 
 # entry point
