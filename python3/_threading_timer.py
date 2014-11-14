@@ -2,10 +2,10 @@
 # Name:        module1
 # Purpose:
 #
-# Author:      Tomomi Yamaguchi
+# Author:      maximilianahead
 #
 # Created:     20/01/2012
-# Copyright:   (c) Tomomi Yamaguchi 2012
+# Copyright:   (c) maximilianahead 2012
 # Licence:     <your licence>
 #-------------------------------------------------------------------------------
 #!/usr/bin/env python

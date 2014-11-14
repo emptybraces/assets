@@ -2,21 +2,21 @@
 # Name:        module1
 # Purpose:
 #
-# Author:      Tomomi Yamaguchi
+# Author:      maximilianahead
 #
 # Created:     10/04/2012
-# Copyright:   (c) Tomomi Yamaguchi 2012
+# Copyright:   (c) maximilianahead 2012
 # Licence:     <your licence>
 #-------------------------------------------------------------------------------
 #! -*- coding:utf-8 -*-x
 #!/usr/bin/env python
 import sys
-import argparse
-
+# import argparse
+from argparse import ArgumentParser
 
 def main():
 
-	parser = argparse.ArgumentParser()
+	parser = ArgumentParser()
 
 	parser.add_argument('-s', action='store', dest='simple_value',
 						help='Store a simple value')

@@ -2,7 +2,7 @@
 """
 Created on Mon Jan 30 12:59:23 2012
 
-@author: Tomomi Yamaguchi
+@author: maximilianahead
 
 meta characters 
 . 改行以外の任意の1文字

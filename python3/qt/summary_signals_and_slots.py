@@ -2,7 +2,7 @@
 """
 Created on Thu Feb 02 14:37:30 2012
 
-@author: Tomomi Yamaguchi
+@author: maximilianahead
 """
 import sys
 from PyQt4 import QtGui

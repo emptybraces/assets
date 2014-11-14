@@ -1,5 +1,6 @@
 import sys
 import os
+import math
 from inspect import stack
 
 def log(message, output=""):

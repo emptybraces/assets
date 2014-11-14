@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8"/>
+	<title></title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+	<script>
+		function* fib() {
+			var i = 0, j = 1;
+			while (true) {
+				// var a = yield i;
+				// console.log("a", a)
+				yield i;
+				var t = i;
+				i = j;
+	 			j += t;
+			}
+		}
+
+		var g = fib();
+		for (var i = 0; i < 10; i++) {
+			var v = g.next()
+			document.write(v.value + "<br>\n");
+			// console.log(v)
+		}
+
+		function* generator() {
+			console.log(yield 1);
+			yield 2;
+			yield 3;
+		}
+
+		var g = generator();
+		console.log(g.next())
+		console.log(g.next("b"))
+		console.log(g.next())
+		console.log(g.next())
+		console.log(g.next())
+
+		// function Promise(setup) {
+		//     var d = jQuery.Deferred();
+		// 	var p = d.promise();
+		// 	setup(d.resolve, d.reject);
+		// 	return p;
+		// }
+
+		// function wait(ms) { 
+		// 	return new Promise(function (resolve, reject) { 
+		// 		setTimeout(resolve, ms);
+		// 	});
+		// }
+
+		// function* Process() {
+		// 	console.log('hi');
+
+		// 	var a = yield wait(1000);
+
+		// 	console.log('this will appear after 1 sec');  
+		// };
+
+
+
+		// var p = Process();
+		// console.log(p)
+		// console.log(1)
+		// var n = p.next();
+		// console.log(n)
+		// console.log(p)
+
+		// function* Test(){
+		// 	console.log(1)
+
+		// 	var a = yield "test";
+
+		// 	console.log(a)
+		// }
+
+		// var test = Test();
+		// console.log(test.next())
+		// console.log(test.send(2))
+
+
+
+	</script>
+</head>
+<body></body>
+</html>
