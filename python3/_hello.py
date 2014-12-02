@@ -25,6 +25,19 @@ def main():
     x, y = lst[2:4];
     print(x,y)
 
+    # callback
+    class Class:
+        def __init__(self):
+            self.x_ = 1;
+        def x(self): return self.x_;
+    def Callback(func):
+        print(func());
+    c = Class()
+    print(c.x())
+    Callback(c.x)
+
+
+
 
 # entry point
 if __name__ == '__main__':
